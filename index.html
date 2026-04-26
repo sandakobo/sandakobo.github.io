@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sandakobo — 小さな道具をひとつずつ</title>
+  <meta name="description" content="日本の小さな個人スタジオ Sandakobo のサイト。ひとつのことだけをきれいにやる道具を作っています。">
+  <style>
+    :root { --brand: #2B7BFF; --bg: #FFFFFF; --fg: #1C1C1E; --muted: #555; --border: #E5E5EA; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1C1C1E; --fg: #F2F2F7; --muted: #B0B0B5; --border: #2C2C2E; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 80px 24px 96px; }
+    header h1 { font-size: 40px; margin: 0 0 4px; color: var(--brand); }
+    header p { color: var(--muted); margin: 0; }
+    h2 { font-size: 22px; margin-top: 48px; }
+    p, li { font-size: 15px; }
+    a { color: var(--brand); }
+    .lang-divider { margin: 64px 0 32px; border: 0; border-top: 1px solid var(--border); }
+    .app-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    .app-card .ico {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      background: #fff;
+      flex-shrink: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .app-card .ico svg { width: 100%; height: 100%; display: block; }
+    .app-card .meta strong { display: block; font-size: 16px; }
+    .app-card .meta span { color: var(--muted); font-size: 13px; }
+    footer { margin-top: 64px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--border); padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Sandakobo</h1>
+      <p>サンダコーボー — 小さな道具を、ひとつずつ。</p>
+    </header>
+
+    <section lang="ja">
+      <h2>このスタジオについて</h2>
+      <p>日本の個人開発スタジオです。「ひとつのことだけをきれいにやる」ユーティリティを Mac 向けに作っています。広告なし、課金なし、データ収集なし。</p>
+
+      <h2>アプリ</h2>
+      <a class="app-card" href="./plain-text/">
+        <span class="ico">
+          <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1024" height="1024" fill="#FFFFFF"/>
+            <rect x="105" y="320" width="160" height="28" rx="14" fill="#FFC83D"/>
+            <text x="92" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="280" font-weight="900" fill="#2B7BFF">A</text>
+            <text x="265" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="210" font-weight="900" fill="#E5484D">a</text>
+            <rect x="430" y="420" width="80"  height="20" rx="10" fill="#FFC83D" opacity="0.95"/>
+            <rect x="430" y="455" width="105" height="20" rx="10" fill="#E5484D" opacity="0.55"/>
+            <rect x="430" y="490" width="90"  height="20" rx="10" fill="#B6CFFA" opacity="0.95"/>
+            <rect x="430" y="525" width="70"  height="20" rx="10" fill="#D9D6FE" opacity="0.95"/>
+            <rect x="92" y="640" width="320" height="22" rx="11" fill="#2B7BFF"/>
+            <path d="M 92 700 q 20 -28 40 0 q 20 28 40 0 q 20 -28 40 0 q 20 28 40 0 q 20 -28 40 0 q 20 28 40 0 q 20 -28 40 0 q 20 28 40 0" stroke="#E5484D" stroke-width="20" stroke-linecap="round" fill="none"/>
+            <g transform="translate(560 530)">
+              <rect x="0" y="-12" width="100" height="24" rx="6" fill="#1C1C1E"/>
+              <polygon points="85,-40 140,0 85,40" fill="#1C1C1E"/>
+            </g>
+            <text x="730" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="280" font-weight="900" fill="#1C1C1E">A</text>
+            <text x="900" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="210" font-weight="900" fill="#1C1C1E">a</text>
+            <rect x="730" y="640" width="200" height="22" rx="11" fill="#1C1C1E"/>
+          </svg>
+        </span>
+        <span class="meta">
+          <strong>プレーンテキスト</strong>
+          <span>貼り付けるだけで書式が消える Mac アプリ。</span>
+        </span>
+      </a>
+
+      <h2>連絡先</h2>
+      <p>不具合報告、要望、その他なんでも：<a href="mailto:sandakobo@gmail.com">sandakobo@gmail.com</a></p>
+    </section>
+
+    <hr class="lang-divider">
+
+    <section lang="en">
+      <h2>About</h2>
+      <p>A tiny independent studio based in Japan. We build small Mac utilities that do one thing well. No ads, no in-app purchases, no data collection.</p>
+
+      <h2>Apps</h2>
+      <a class="app-card" href="./plain-text/">
+        <span class="ico">
+          <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1024" height="1024" fill="#FFFFFF"/>
+            <rect x="105" y="320" width="160" height="28" rx="14" fill="#FFC83D"/>
+            <text x="92" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="280" font-weight="900" fill="#2B7BFF">A</text>
+            <text x="265" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="210" font-weight="900" fill="#E5484D">a</text>
+            <rect x="430" y="420" width="80"  height="20" rx="10" fill="#FFC83D" opacity="0.95"/>
+            <rect x="430" y="455" width="105" height="20" rx="10" fill="#E5484D" opacity="0.55"/>
+            <rect x="430" y="490" width="90"  height="20" rx="10" fill="#B6CFFA" opacity="0.95"/>
+            <rect x="430" y="525" width="70"  height="20" rx="10" fill="#D9D6FE" opacity="0.95"/>
+            <rect x="92" y="640" width="320" height="22" rx="11" fill="#2B7BFF"/>
+            <path d="M 92 700 q 20 -28 40 0 q 20 28 40 0 q 20 -28 40 0 q 20 28 40 0 q 20 -28 40 0 q 20 28 40 0 q 20 -28 40 0 q 20 28 40 0" stroke="#E5484D" stroke-width="20" stroke-linecap="round" fill="none"/>
+            <g transform="translate(560 530)">
+              <rect x="0" y="-12" width="100" height="24" rx="6" fill="#1C1C1E"/>
+              <polygon points="85,-40 140,0 85,40" fill="#1C1C1E"/>
+            </g>
+            <text x="730" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="280" font-weight="900" fill="#1C1C1E">A</text>
+            <text x="900" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="210" font-weight="900" fill="#1C1C1E">a</text>
+            <rect x="730" y="640" width="200" height="22" rx="11" fill="#1C1C1E"/>
+          </svg>
+        </span>
+        <span class="meta">
+          <strong>PlainText</strong>
+          <span>Strip formatting on paste. macOS.</span>
+        </span>
+      </a>
+
+      <h2>Contact</h2>
+      <p>Bug reports, requests, anything: <a href="mailto:sandakobo@gmail.com">sandakobo@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 Sandakobo. Made in Japan.</p>
+    </footer>
+  </main>
+</body>
+</html>
